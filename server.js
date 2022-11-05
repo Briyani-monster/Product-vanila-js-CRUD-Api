@@ -35,7 +35,9 @@ const server = http.createServer((req, res) => {
     } else {
         res.writeHead(404, { 'Content-Type': 'application/json' });
         res.end(
-            JSON.stringify({ statuCode: 404, message: 'location not found' })
+            JSON.stringify({
+                message: 'location not found go to /api/products',
+            )
         );
     }
 });
