@@ -33,7 +33,7 @@ const server = http.createServer((req, res) => {
         const id = req.url.split('/')[3];
         deleteProduct(req, res, id);
     } else {
-        res.writeHead(404, { 'Content-Type': 'application/json' });
+        res.writeHead(200, { 'Content-Type': 'application/json' });
         res.end(
             JSON.stringify({
                 message: 'location not found go to /api/products',
