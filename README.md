@@ -3,16 +3,23 @@
 ## links of api are
 
 -   Gets All Products
--   GET /api/products
+    -   GET /api/products
+
+
 
 -   Gets one Product
--   Get /api/products/:id
+    -   GET /api/products/:id
+
 
 -   create a Product
--   POST /api/products body have data for creation
+    -   POST /api/products 
+    -   body have data for creation
+
 
 -   update a Product
--   PUT /api/products/id body have update data
+    -   PUT /api/products/id
+    -   body have update data
+
 
 -   delete a Product
--   DELETE /api/products/id
+    -   DELETE /api/products/id
