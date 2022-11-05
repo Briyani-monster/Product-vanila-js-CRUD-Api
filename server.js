@@ -37,8 +37,9 @@ const server = http.createServer((req, res) => {
         res.end(
             JSON.stringify({
                 message: 'location not found go to /api/products',
-            )
-        );
+            }
+        )
+       );
     }
 });
 
