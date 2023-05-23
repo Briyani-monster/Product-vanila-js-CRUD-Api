@@ -8,6 +8,16 @@ const {
 } = require('./controllers/productController');
 
 const server = http.createServer((req, res) => {
+     // Set CORS headers
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader(
+        'Access-Control-Allow-Methods',
+        'GET, POST, PUT, PATCH, DELETE'
+    );
+    res.setHeader(
+        'Access-Control-Allow-Headers',
+        'Content-Type, Authorization'
+    );
     if (req.url === '/api/products' && req.method === 'GET') {
         getProducts(req, res);
     } else if (
